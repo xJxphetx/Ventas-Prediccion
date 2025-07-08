@@ -43,7 +43,7 @@ ventas-prediccion/
 1. Clona el repositorio:
 
 ```bash
-git clone https://github.com/tu_usuario/ventas-prediccion.git
+git clone https://github.com/xJxphetx/ventas-prediccion.git
 cd ventas-prediccion
 ```
 
