@@ -1,4 +1,4 @@
-<h1 align="center">🤖 AG Electrónica – Asistente de Predicción de Ventas</h1>
+<h1 align="center">🤖 Predicción de Ventas</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/modelos-ARIMA_&_LSTM-blue?style=flat-square" />
