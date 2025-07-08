@@ -1,81 +1,94 @@
-# 📊 Predicción de Ventas con ARIMA y LSTM
+<h1 align="center">🤖 AG Electrónica – Asistente de Predicción de Ventas</h1>
 
-Este proyecto compara dos métodos para la predicción de series temporales de ventas:
-
-- `ARIMA` (modelo estadístico tradicional)
-- `LSTM` (modelo de red neuronal recurrente)
-
-Ambos scripts utilizan datos históricos de ventas y generan predicciones para períodos futuros, incluyendo visualización y exportación de resultados a Excel y PDF.
+<p align="center">
+  <img src="https://img.shields.io/badge/modelos-ARIMA_&_LSTM-blue?style=flat-square" />
+  <img src="https://img.shields.io/badge/python-3.10+-green?style=flat-square" />
+  <img src="https://img.shields.io/badge/license-MIT-brightgreen?style=flat-square" />
+</p>
 
 ---
 
-## 📁 Estructura del proyecto
+##  Sobre el Proyecto
 
-```bash
+Este proyecto compara dos enfoques para la predicción de ventas:
+
+-  📊 **ARIMA**: Modelo estadístico clásico
+-  🧠 **LSTM**: Red neuronal recurrente profunda
+
+Ambos scripts procesan datos históricos de ventas y generan predicciones gráficas y exportables.
+
+---
+
+##  Estructura del Repositorio
+
+```
 ventas-prediccion/
 ├── src/
-│   ├── arima.py                   # Predicción usando modelo ARIMA
-│   └── prediccion.py              # Predicción usando red neuronal LSTM
+│   ├── arima.py                 # Modelo ARIMA
+│   └── prediccion.py            # Modelo LSTM (TensorFlow)
 ├── resultados/
-│   ├── Predicciones_Ventas_ARIMA.xlsx
-│   ├── Predicciones_Ventas_Futuras.xlsx
-│   ├── Graficos_Predicciones_ARIMA.pdf
-│   └── Graficos_Predicciones.pdf
+│   ├── Predicciones_*.xlsx      # Resultados en Excel
+│   └── Graficos_*.pdf           # Gráficos generados
 ├── docs/
-│   └── descripcion_modelos.md     # Explicación técnica de los modelos
-└── README.md
+│   └── descripcion_modelos.md   # Explicación técnica
+├── requirements.txt             # Librerías necesarias
+├── LICENSE                      # MIT License
+└── README.md                    # Este archivo
 ```
 
 ---
 
-## 🚀 ¿Cómo ejecutar?
+##  Cómo Ejecutar
 
-### 1. Clonar el repositorio
+1. Clona el repositorio:
 
 ```bash
 git clone https://github.com/tu_usuario/ventas-prediccion.git
 cd ventas-prediccion
 ```
 
-### 2. Instalar dependencias
+2. Instala dependencias:
 
 ```bash
-pip install pandas numpy matplotlib tensorflow statsmodels openpyxl
+pip install -r requirements.txt
 ```
 
-### 3. Ejecutar scripts
-
-#### Modelo ARIMA:
+3. Ejecuta un modelo:
 
 ```bash
+# Para ARIMA:
 python src/arima.py
-```
 
-#### Modelo LSTM (deep learning):
-
-```bash
+# Para LSTM:
 python src/prediccion.py
 ```
 
 ---
 
-## 📦 Salidas
+##  Tecnologías
 
-- `resultados/Predicciones_*.xlsx` → Predicciones futuras
-- `resultados/Graficos_*.pdf` → Visualizaciones de desempeño
-
----
-
-## 🧠 Comparación breve
-
-| Modelo | Tipo          | Ventajas                          | Requiere entrenamiento |
-|--------|---------------|-----------------------------------|------------------------|
-| ARIMA  | Estadístico   | Rápido, interpretabilidad alta    | ❌ No                  |
-| LSTM   | Deep Learning | Aprende patrones complejos        | ✅ Sí                  |
+- `pandas`, `numpy`, `matplotlib`
+- `statsmodels` (ARIMA)
+- `tensorflow` (LSTM)
+- `openpyxl` para exportar resultados
 
 ---
 
-## 👤 Autor
+##  Comparación
 
-Desarrollado por [Tu Nombre]  
-Última actualización: Julio 2025
+| Modelo | Tipo | Ventajas | Entrenamiento |
+|--------|------|----------|---------------|
+| ARIMA  | Estadístico | Rápido, interpretable | ❌ No |
+| LSTM   | Deep Learning | Flexible, potente | ✅ Sí |
+
+---
+
+##  Licencia
+
+Este repositorio está licenciado bajo la [MIT License](LICENSE).
+
+---
+
+## 🙌 Autor
+
+Creado por **@xJxphetx** – Julio 2025
