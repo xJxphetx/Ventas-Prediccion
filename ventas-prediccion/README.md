@@ -89,6 +89,6 @@ Este repositorio está licenciado bajo la [MIT License](LICENSE).
 
 ---
 
-## 🙌 Autor
+## Autor
 
 Creado por **@xJxphetx** – Julio 2025
